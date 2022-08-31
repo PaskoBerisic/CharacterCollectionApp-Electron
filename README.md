@@ -74,13 +74,20 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm install
    ```
-3. (Optional) <br>
-   IMPORTANT!
+3. IMPORTANT! <br>
    You need to use separate WebAPI Project to serve as database.
    
    Clone the WebAPI repo
    ```sh
    git clone https://github.com/PaskoBerisic/CharacterCollection-WebAPI.git
+   ```
+4. Run Application
+   ```sh 
+   npm run start:electron
+   ``` 
+   OR 
+   ```sh 
+   npm run start 
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,13 +103,13 @@ Use the predefined database with some of the Marvel characters or even extend th
 ## Screenshots
 
 ### Landing Page
-![landing](https://user-images.githubusercontent.com/37916092/187631170-5d7a2bcc-4743-4194-a224-78153a16a5f4.png)
+![landing](https://user-images.githubusercontent.com/37916092/187668279-22a83b10-8b85-47ae-af03-ad95f3847e6b.png)
 
 ### Heroes View
-![heroes](https://user-images.githubusercontent.com/37916092/187631202-5b75cec0-cc8a-43e9-bf96-be4ad1130f0c.png)
+![heroes](https://user-images.githubusercontent.com/37916092/187668297-f9d0b7e9-103a-4669-a35b-754b8478d2de.png)
 
 ### Villain View
-![villains](https://user-images.githubusercontent.com/37916092/187631220-094864c2-a177-4685-b9b7-e759f6701475.png)
+![villains](https://user-images.githubusercontent.com/37916092/187668330-94f93454-b2bd-4120-9b3e-a9ee9d8a7868.png)
 
 
 ## Contributing

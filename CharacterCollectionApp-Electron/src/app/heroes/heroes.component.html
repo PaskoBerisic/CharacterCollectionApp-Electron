@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let hero of heroes">
+      <div class="col">
+        <div class="card shadow-sm">
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="50px" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text>
+          </svg>
+          <div class="card-body">
+          <h3>{{hero.name}}</h3>
+          <p>{{hero.power}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"
+                  (click)="deleteHero(hero.id)">Delete</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">See
+                  details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" (click)="showControls()">Show Controls</button>
+  <section id="control">
+  <div class="row">
+    <div class="col-md-3">
+      <app-hero-form-group type="get" title="Get Hero By ID" buttonText="Get" (heroChange)="getHeroByID($event)">
+      </app-hero-form-group>
+    </div>
+    <div class="col-md-3">
+      <app-hero-form-group type="post" title="Add Hero" buttonText="Add" [flag]="flag" (heroChange)="postHero($event)">
+      </app-hero-form-group>
+    </div>
+    <div class="col-md-3">
+      <app-hero-form-group type="put" title="Update Hero" buttonText="Update" (heroChange)="putHero($event)">
+      </app-hero-form-group>
+    </div>
+    <div class="col-md-3">
+      <app-hero-form-group type="delete" title="Delete Hero" buttonText="Delete" (heroChange)="deleteHero($event)">
+      </app-hero-form-group>
+    </div>
+  </div>
+</section>
+</div>
